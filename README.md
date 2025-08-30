@@ -83,20 +83,20 @@
 ### 3. Изменяем стили для кнопки или элемента которое выводится в кнопке
 
 Изменяем стили кнопки:
-```json
+```javascript
    {
     style: {
         css: { 
             'position': 'relative', 
             'overflow': 'hidden', 
             'z-index': 1, 
-            'display': 'block',
-        },
+            'display': 'block'
+        }
     }
    }
 ```
 Изменяем стили элемента в кнопке:
-```json
+```javascript
    {
     style: {
         elem_css: { 
@@ -109,8 +109,8 @@
             '-webkit-transition': 'background 0.3s', 
             '-moz-transition': 'background 0.3s', 
             '-o-transition': 'background 0.3s', 
-            'transition': 'background 0.3s', 
-        },
+            'transition': 'background 0.3s'
+        }
     }
    }
 ```
