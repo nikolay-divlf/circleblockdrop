@@ -1,0 +1,298 @@
+<p>Написали плагин, в котором будет анимация при клике на элемент. Это круговая анимация появляющаяся при клике и исчезнованием при увеличении и прозрачности, тем самым подразумевать эффект падающую каплю в воду. Внизу есть пример в gif анимации и код как это работает.</p>
+<p>circleblockdrop работает на jquery!!!</p>
+<div class="br"></div>
+<p style="text-align: center;"><strong>Скачать плагин circleblockdrop архивом:</strong></p>
+<div style="text-align: center;">
+    <!--<a title="скачать архив" href="{urlIframeSource}circleblockdrop/circleblockdrop.zip" download=""><span class="button download-button js-anim">скачать</span></a>--> <a title="скачать из github" href="https://github.com/nikol73/circleblockdrop" target="_blank"><span class="button download-button button-github js-anim">скачать из github</span></a></div>
+<p></p>
+<p style="text-align: center;">[<a style="text-decoration: underline;" href="{urlBase}content/publications" target="_blank">инфа о файлах</a>]</p>
+<div class="br"></div>
+<div><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_2.gif" alt="" /></div>
+<div class="br"></div>
+<p><strong>Исходная разметка html:</strong></p>
+<pre id="_code_html"><!--@code<style type="text/css">
+	* {
+		box-sizing: border-box;
+	}
+	.but {
+		width: 150px; height: 30px; cursor: pointer;
+	}
+	.block {
+		background: #b090ff; max-width: 500px; width: 100%; padding: 15px;
+	}
+</style>
+<div>
+	<button class="button1 but">
+		Button
+	</button>
+</div>
+<br>
+<div class="button block">
+	<h1>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	</h1>
+	<p>
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	</p>
+</div>
+<div class="button block" style="background: #eeff90;">
+	<h1>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	</h1>
+	<p>
+    	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+	</p>
+</div>
+@code--></pre>
+<p><strong>Исходный код javascript:</strong></p>
+<pre id="_code_javascript"><!--@code$('.button1').circleblockdrop({
+	elemCss: {
+		'background' : 'red'
+	},
+});
+$('.button').circleblockdrop();
+@code--></pre>
+<p><strong>Сможете сами проверить:</strong></p>
+<p>{ansiframe src="{urlIframe}circleblockdrop" data-name="circleblockdrop" height="450" style="height: 400px;" ansiframe}</p>
+<div style="padding-top: 0px;"><a title="Перейти на страницу" href="{urlIframe}circleblockdrop" target="_blank" rel="nofollow">Перейти на страницу</a></div>
+<hr />
+<div class="th4" style="text-align: center;">Список Опций</div>
+<div class="br"></div>
+<div class="th6">1. Отмена предыдущей анимации:</div>
+<p><strong>1)</strong> На второй кнопке добавляет отмену созданной предыдущей анимации (пропадает предыдущий круг)</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>stack: true</strong> <br /> stack: false <br /> <strong>stack (тип boolean)</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_7.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	stack: false
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">2. Скорость работы анимации:</div>
+<p><strong>1)</strong> С какой скоростью будет увеличиваться текущий круг</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>speed: 600</strong> <br /> speed: 3000 <br /> <strong>speed (тип integer)</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_5.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	speed: 3000
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">3. Скорость задержки в начале выполнения:</div>
+<p><strong>1)</strong> Задерживается появившийся круг на определенное количество времени</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>speedDelay: 0</strong> <br /> speedDelay: 300 <br /> <strong>speedDelay (тип integer)</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_6.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	speedDelay: 300
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">4. Размер появившегося круга:</div>
+<p><strong>1)</strong> Указываем начальный размер круга при появлении</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>elemBeginWidth: 5</strong> <br /> elemBeginWidth: 30 <br /> <strong>elemBeginWidth (тип integer) в px</strong></div>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>elemBeginHeight: 5</strong> <br /> elemBeginHeight: 30 <br /> <strong>elemBeginHeight (тип integer) в px</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_3.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	elemBeginWidth: 30,
+	elemBeginHeight: 30
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">5. Зафиксировать положение круга:</div>
+<p><strong>1)</strong> Зафиксировать появившегося круга в указанных положениях</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>align: 'none'</strong> <br /> align: 'left, top'<br /> <strong>align (тип string)</strong></div>
+<div class="box" style="margin-bottom: 15px;">
+    <p style="margin-bottom: 5px;">Есть список которые принимает свойство align:</p>
+    <div style="margin-bottom: 5px;"><span class="tegp">none</span> - Отменить выравнивание</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">left</span> - Выравнивание по левой части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">top</span> - Выравнивание по верхней части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">right</span> - Выравнивание по правой части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">bottom</span> - Выравнивание по нижней части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">center</span> - Выравнивание по сентру</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">centerLeft</span> - Выравнивание по сентру левой части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">centerRight</span> - Выравнивание по сентру правой части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">centerTop</span> - Выравнивание по сентру верхней части</div>
+    <div style="margin-bottom: 5px;"><span class="tegp">centerBottom</span> - Выравнивание по сентру нижней части</div>
+</div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_1.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	align: 'left, top'
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">6. Выводим внутри появившегося круга:</div>
+<p><strong>1)</strong> Указываем любой код html внутри круга, к примеру текст или что то другое</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>elemInHtml: ''</strong> <br /> elemInHtml: ' ‹div style="display: flex; align-items: center; justify-content: center; width: calc(100% - 1px); height: calc(100% - 1px); border-radius: 100%; background: blue; font-size: 0.1em;"›*‹/div› ' <br /> <strong>elemInHtml (тип string)</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_8.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	elemInHtml: '<div style="display: flex; align-items: center; justify-content: center; width: calc(100% - 1px); height: calc(100% - 1px); border-radius: 100%; background: blue; font-size: 0.1em;">*</div>'
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">7. Меняем положение текущего круга при смене размера экрана:</div>
+<p><strong>1)</strong> Когда создается круг возможно в указанном медленном времени, и ихочешь что бы круг изменял свои место положение (координаты) есть свойство resize</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>resize: false</strong> <br /> resize: true <br /> <strong>resize (тип boolean)</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_4.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	resize: true
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">8. меняем стили круга (цвет, и другое):</div>
+<p><strong>1)</strong> Меняем текущие или добавляем свои стили на появившийся круг</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>elemCss</strong>
+    <pre id="_code_json"><!--@code elemCss: {
+    'position': 'absolute',
+    'background': 'rgba(221, 221, 221, 0.50)',
+    'border-radius': '100%',
+    'z-index': '-1',
+    'pointer-events': 'none',
+    'opacity': '0',
+    '-webkit-transition': 'background 0.3s',
+    '-moz-transition': 'background 0.3s',
+    '-o-transition': 'background 0.3s',
+    'transition': 'background 0.3s',
+}
+@code--></pre>
+    elemCss:
+    <pre id="_code_json"><!--@code elemCss: {
+    'background' : 'red'
+}
+@code--></pre>
+    <strong>elemCss (тип json)</strong></div>
+<div class="row">
+    <div class="col-sm-5"><img class="fancybox-img" src="/web/theme/source/circleblockdrop/circleblockdrop_5.gif" width="601" height="323" /></div>
+    <div class="col-sm-7">
+        <pre id="_code_html"><!--@code<button class="button" style="max-width: 500px; width: 100%; height: 60px; cursor: pointer;">
+	Button
+</button>
+@code--></pre>
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	elemCss: {
+        'background' : 'red'
+    }
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">9. Можно менять стили к базовому блоку:</div>
+<p><strong>1)</strong> Базовый блок это блок в котором выводятся круги, и на базовый блок применяются стили</p>
+<div class="box" style="margin-bottom: 15px;">По умолчанию: <strong>css</strong>
+    <pre id="_code_json"><!--@code css: {
+    'position' : 'relative',
+    'overflow' : 'hidden',
+    'z-index' : '1',
+    'display' : 'block'
+},
+@code--></pre>
+    <strong>сss (тип json)</strong></div>
+<div class="row">
+    <div class="col-sm-12">
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+	сss: {
+        // ...
+    }
+});
+@code--></pre>
+    </div>
+</div>
+<div class="th6">10. Обновление плагина настроек:</div>
+<p><strong>1)</strong> Если изменили настройку то в этом случаи есть функция которая обнавляет плагин <strong>resizeFun</strong>:</p>
+<div class="row">
+    <div class="col-sm-12" style="margin-bottom: 10px;">
+        <pre id="_code_javascript"><!--@codevar cbd = $('.button').circleblockdrop();
+
+// обновление опций
+		 cbd.each(function(){
+	this.resizeFun();
+});
+@code-->
+        </pre>
+    </div>
+</div>
+<div class="th6">11. Изменение настройки (изменение опций):</div>
+<p><strong>1)</strong> Если вы решили изменить текущие опции плагина для этого есть <strong>updateFun</strong> с помощью которой можно изменить входящие опции. В примере показанно что сначало применили цвет красный а потом изменили на оранжевый цвет. Для дополнительной функции выполняй функцию <strong>resizeFun</strong> для обновления:</p>
+<div class="row">
+    <div class="col-sm-12" style="margin-bottom: 10px;">
+        <pre id="_code_javascript"><!--@codevar cbd = $('.button').circleblockdrop({
+	elemCss: {
+		'background' : 'red'
+	},
+});
+
+cbd.each(function(){
+
+			 // изменение опций
+	this.updateFun({
+		elemCss: {
+			'background' : 'orange'
+		}
+	});
+
+	// не обязательно
+	this.resizeFun();
+});
+@code-->
+        </pre>
+    </div>
+</div>
+<div class="th6">12. Изменение классов и тега для работы:</div>
+<p><strong>1)</strong> Бывают моменты что у пользователя установлена верстка к классам, к id элементу или тегам с которыми работает плагин, в этом случаи можно это изменить для предотвращения конфликта верстки к плагину:</p>
+<div class="row">
+    <div class="col-sm-12">
+        <pre id="_code_javascript"><!--@code$('.button').circleblockdrop({
+    elemNameTag: 'span', // тег созданного элемента (появление круга)
+    elemId: 'circleblockdrop_elem', // ид созданного элемента (индентификатор круга указывается в теге)
+    elemClass: 'circleblockdrop_elem', // класс созданного элемента (класс круга указывается в теге)
+});
+@code-->
+        </pre>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Circleblockdrop</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="circleblockdrop.min.js"></script>
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            .btn {
+                width: 100%;
+                max-width: 500px;
+                height: 50px;
+                cursor: pointer;
+            }
+            .block {
+                background: #b090ff;
+                max-width: 500px;
+                width: 100%;
+                padding: 15px;
+            }
+            .box {
+                padding: 10px;
+                border: 1px solid #000000;
+                margin-bottom: 15px;
+            }
+            .box:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+            .h1 {
+                font-size: 2em;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="box">
+            <div class="h1">Example:</div>
+            <div><button class="btn button1">Button</button></div>
+            <br>
+            <script>
+                $('.button1').circleblockdrop({
+                    speed: 3000,
+                    //align: 'left, top',
+                    style: {
+                        elem_css: {
+                            'background' : 'red',
+                        },
+                    },
+                    animate: {
+                        easing: 'circleblockdropEaseOutQuint',
+                    },
+                });
+            </script>
+            <div><button class="btn button2">Button</button></div>
+            <br>
+            <script>
+                $.circleblockdrop('.button2, .button', {
+                    speed: 3000,
+                    elem_begin_width: 0.5,
+                    elem_begin_height: 0.5,
+                    animate: {
+                        easing: 'circleblockdropEaseOutQuint',
+                    },
+                });
+            </script>
+            <div class="button block">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat."
+                </p>
+            </div>
+            <br>
+            <div class="button block" style="background: #eeff90;">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat."
+                </p>
+            </div>
+		</div>
+	</body>
+</html>

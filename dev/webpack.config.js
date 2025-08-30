@@ -1,25 +1,26 @@
 const path = require('path');
 const webpack = require('webpack');
+const fs = require('fs');
 
 module.exports = {
     context: __dirname + '/',
     entry: {
-        circleblockdrop: './circleblockdrop.js',
+        'circleblockdrop.min': './plugin/circleblockdrop.js',
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './../assets'),
-        //library: 'global', //вывести в глобальную переменную код
+        path: path.resolve(__dirname, './../public'),
     },
     externals: {
-        prestashop: 'prestashop',
         $: '$',
         jquery: 'jQuery',
         Popper: ['popper.js', 'default']
     },
+    optimization: {
+        minimize: true,
+    },
     plugins: [
         new webpack.ContextReplacementPlugin(/node_modules\/moment\/locale/, /ru|en-gb/), //указываем какие файлы подгружать модулем "moment"
+        new webpack.BannerPlugin(fs.readFileSync('./../public/LICENSE', 'utf8')),
     ]
-    //watch: true, //проверяется на изменение и выполняется перезборка
-    //devtool: 'cheap-inline-module-source-map',
 };
