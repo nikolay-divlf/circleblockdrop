@@ -37,46 +37,46 @@
 
 ### 2. Опции 
 Добавляем что-то внутрь элемента, например картинку или символ:
-```json
+```javascript
    {
-    elem_in_html: '',
+    elem_in_html: ''
    }
 ```
 Начальный размер элемента:
-```json
+```javascript
    {
      elem_begin_width: 0.5,
-     elem_begin_height: 0.5,
+     elem_begin_height: 0.5
    }
 ```
 Изменить координаты элемента, если изменился размер кнопки:
-```json
+```javascript
    {
-     resize: true,
+     resize: true
    }
 ```
 Позиционирование элемента:
-```json
+```javascript
    {
-     align: 'left, top',
+     align: 'left, top'
    }
 ```
 Удалить предыдущие элементы:
-```json
+```javascript
    {
-     stack: true,
+     stack: true
    }
 ```
 Начальная задержка элемента:
-```json
+```javascript
    {
-     speed_delay: 30,
+     speed_delay: 30
    }
 ```
 Скорость элемента:
-```json
+```javascript
    {
-     speed: 300,
+     speed: 300
    }
 ```
 
@@ -117,30 +117,30 @@
 
 ### 4. Изменяем классы или ид, если у вас есть конфликт с версткой, чтобы ид и классы были разными
 Класс для кнопки:
-```json
+```javascript
    {
     class: 'circleblockdrop-block'
    }
 ```
 Ид для элемента:
-```json
+```javascript
    {
-    elem_id: 'circleblockdrop-elem',
+    elem_id: 'circleblockdrop-elem'
    }
 ```
 Класс для элемента:
-```json
+```javascript
    {
-    elem_class: 'circleblockdrop-elem',
+    elem_class: 'circleblockdrop-elem'
    }
 ```
 
 ### 5. Эффекты замедления для анимации
 Правильное применение опции:
-```json
+```javascript
    {
     animate: {
-        easing: 'swing',
+        easing: 'swing'
     }
    }
 ```
