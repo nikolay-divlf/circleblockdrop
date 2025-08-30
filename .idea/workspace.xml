@@ -16,11 +16,20 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="208">
-                <caret line="160" column="79" selection-start-line="160" selection-start-column="79" selection-end-line="160" selection-end-column="79" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="176">
+                <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="circleblockdrop.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/plugin/circleblockdrop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="101" column="21" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -29,8 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>elem_begin_width</find>
-      <find>options.css</find>
       <find>options.elem_css</find>
       <find>options.style.elem_css</find>
       <find>options.class</find>
@@ -59,6 +66,8 @@
       <find>circleblockdrop_info</find>
       <find>circleblockdropEaseOutQuad</find>
       <find>box</find>
+      <find>файл &quot;jqury&quot;</find>
+      <find>centerLeft</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,7 +147,8 @@
             <path>
               <item name="circleblockdrop" type="b2602c69:ProjectViewProjectNode" />
               <item name="circleblockdrop" type="462c0819:PsiDirectoryNode" />
-              <item name="releases" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,18 +210,18 @@
       <updated>1756462803858</updated>
       <workItem from="1756462805006" duration="54472000" />
       <workItem from="1756576162065" duration="323000" />
-      <workItem from="1756576883532" duration="4821000" />
+      <workItem from="1756576883532" duration="9869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59616000" />
+    <option name="totallyTimeSpent" value="64664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17583893" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17583893" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -334,13 +344,6 @@
     <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_8.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/plugin/circleblockdrop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="125" column="73" selection-start-line="125" selection-start-column="73" selection-end-line="125" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -389,11 +392,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dev/plugin/circleblockdrop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="101" column="21" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="208">
-            <caret line="160" column="79" selection-start-line="160" selection-start-column="79" selection-end-line="160" selection-end-column="79" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="176">
+            <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>
