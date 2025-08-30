@@ -158,10 +158,10 @@
 - circleblockdropEaseOutCirc
 - circleblockdropEaseInOutCirc
 
-Если вам нужно еще дополнительные события, то вы можете подгрузить файл "jqury", который дополнит список "easing"
+Если вам нужно еще дополнительные эффекты, то вы можете подгрузить файл "jqury", который дополнит список "easing"
 - https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
 
-И также известен список событий, на сайте выполняется демонстрация этих событий:
+И также известен список эффектов, на сайте выполняется демонстрация этих эффектов:
 - https://plugins.compzets.com/animatescroll/
 
 ### 6. События при выполнении плагина
