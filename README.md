@@ -158,7 +158,7 @@
 - circleblockdropEaseOutCirc
 - circleblockdropEaseInOutCirc
 
-Если вам нужно еще дополнительные эффекты, то вы можете подгрузить файл "jqury", который дополнит список "easing"
+Если вам нужно еще дополнительные эффекты, то вы можете подгрузить файл "jquery", который дополнит список "easing"
 - https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
 
 И также известен список эффектов, на сайте выполняется демонстрация этих эффектов:
