@@ -1,5 +1,5 @@
 dev/package-lock.json
 dev/node_modules
 files/
-.idea/inspectionProfiles
-.idea/*.xml
+.idea/
+.idea/*
