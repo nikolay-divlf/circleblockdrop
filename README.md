@@ -10,145 +10,145 @@
 
 Пример 1.
 ```javascript
-    $.circleblockdrop('.button', {
-       // options
-    });
+$.circleblockdrop('.button', {
+   // options
+});
 ```
 Пример 2.
 ```javascript
-    $.circleblockdrop('.button2, .button', {
-       // options
-    });
+$.circleblockdrop('.button2, .button', {
+   // options
+});
 ```
 
 ##### - Если вы выполняете навигаю по вложенности дом документа
 Пример 1.
 ```javascript
-    $('.button1').circleblockdrop({
-       // options
-    });
+$('.button1').circleblockdrop({
+   // options
+});
 ```
 Пример 2.
 ```javascript
-    $(this).circleblockdrop({
-       // options
-    });
+$(this).circleblockdrop({
+   // options
+});
 ```
 
 ### 2. Опции 
 Добавляем что-то внутрь элемента, например картинку или символ:
 ```javascript
-   {
-    elem_in_html: ''
-   }
+{
+   elem_in_html: ''
+}
 ```
 Начальный размер элемента:
 ```javascript
-   {
-     elem_begin_width: 0.5,
-     elem_begin_height: 0.5
-   }
+{
+   elem_begin_width: 0.5,
+   elem_begin_height: 0.5
+}
 ```
 Изменить координаты элемента, если изменился размер кнопки:
 ```javascript
-   {
-     resize: true
-   }
+{
+  resize: true
+}
 ```
 Позиционирование элемента:
 ```javascript
-   {
-     align: 'left, top'
-   }
+{
+   align: 'left, top'
+}
 ```
 Удалить предыдущие элементы:
 ```javascript
-   {
-     stack: true
-   }
+{
+   stack: true
+}
 ```
 Начальная задержка элемента:
 ```javascript
-   {
-     speed_delay: 30
-   }
+{
+   speed_delay: 30
+}
 ```
 Скорость элемента:
 ```javascript
-   {
-     speed: 300
-   }
+{
+   speed: 300
+}
 ```
 
 ### 3. Изменяем стили для кнопки или элемента которое выводится в кнопке
 
 Изменяем стили кнопки:
 ```javascript
-   {
-    style: {
-        css: { 
-            'position': 'relative', 
-            'overflow': 'hidden', 
-            'z-index': 1, 
-            'display': 'block'
-        }
-    }
+{
+   style: {
+      css: { 
+         'position': 'relative', 
+         'overflow': 'hidden', 
+         'z-index': 1, 
+         'display': 'block'
+      }
    }
+}
 ```
 Изменяем стили элемента в кнопке:
 ```javascript
-   {
-    style: {
-        elem_css: { 
-            'position': 'absolute', 
-            'background': 'rgba(255, 255, 255, 0.50)', 
-            'border-radius': '100%', 
-            'z-index': '-1', 
-            'pointer-events': 'none', 
-            'opacity': '0', 
-            '-webkit-transition': 'background 0.3s', 
-            '-moz-transition': 'background 0.3s', 
-            '-o-transition': 'background 0.3s', 
-            'transition': 'background 0.3s'
-        }
-    }
+{
+   style: {
+      elem_css: { 
+         'position': 'absolute', 
+         'background': 'rgba(255, 255, 255, 0.50)', 
+         'border-radius': '100%', 
+         'z-index': '-1', 
+         'pointer-events': 'none', 
+         'opacity': '0', 
+         '-webkit-transition': 'background 0.3s', 
+         '-moz-transition': 'background 0.3s', 
+         '-o-transition': 'background 0.3s', 
+         'transition': 'background 0.3s'
+      }
    }
+}
 ```
 
 ### 4. Изменяем классы или ид, если у вас есть конфликт с версткой, чтобы ид и классы были разными
 Класс для кнопки:
 ```javascript
-   {
-    class: 'circleblockdrop-block'
-   }
+{
+   class: 'circleblockdrop-block'
+}
 ```
 Название тега элемента:
 ```javascript
-   {
-    elem_name_tag: 'span'
-   }
+{
+   elem_name_tag: 'span'
+}
 ```
 Ид для элемента:
 ```javascript
-   {
-    elem_id: 'circleblockdrop-elem'
-   }
+{
+   elem_id: 'circleblockdrop-elem'
+}
 ```
 Класс для элемента:
 ```javascript
-   {
-    elem_class: 'circleblockdrop-elem'
-   }
+{
+   elem_class: 'circleblockdrop-elem'
+}
 ```
 
 ### 5. Эффекты замедления для анимации
 Правильное применение опции:
 ```javascript
-   {
-    animate: {
-        easing: 'swing'
-    }
+{
+   animate: {
+      easing: 'swing'
    }
+}
 ```
 В значение "easing" доступно следующий список:
 - swing
@@ -176,69 +176,63 @@
 - data - передаются данные кнопки (это могут быть опции которые вы передаете при вызове или данные которые отрабатываются в процессе срабатывания события)
 
 ##### - (Событие) Инициализация кнопки
-```javascript
-   $('.button').on('circleblockdrop-init', function (event, data) {
-       console.log(data);
-   });
+```javascri$('.button').on('circleblockdrop-init', function (event, data)    console.log(data});
 ```
 ##### - (Событие) Добавление логики на элемент который еще не создан в кнопке
-```javascript
-   $('.button').on('circleblockdrop-add', function (event, data) {
-       console.log(data);
-   });
+```javascri$('.button').on('circleblockdrop-add', function (event, data)    console.log(data});
 ```
 ##### - (Событие) Создание элемента в кнопке
 ```javascript
-   $('.button').on('circleblockdrop-create', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-create', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Событие) Если произойдет изменения размера кнопки, при изменении окна браузера, то сработает данное событие
 ```javascript
-   $('.button').on('circleblockdrop-resize', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-resize', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Событие) Выполнили клик на кнопку
 ```javascript
-   $('.button').on('circleblockdrop-click', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-click', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Событие) Завершился клик на кнопку
 ```javascript
-   $('.button').on('circleblockdrop-click-end', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-click-end', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Событие) Выполнение анимации элемента в кнопке
 ```javascript
-   $('.button').on('circleblockdrop-animate-step', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-animate-step', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Событие) Завершении анимации элемента в кнопке
 ```javascript
-   $('.button').on('circleblockdrop-animate-complete', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-animate-complete', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Событие) Изменение опций, при выполнении триггера
 ```javascript
-   $('.button').on('circleblockdrop-update-options', function (event, data) {
-       console.log(data);
-   });
+$('.button').on('circleblockdrop-update-options', function (event, data) {
+    console.log(data);
+});
 ```
 ##### - (Триггер) Изменяем опции в кнопки
 ```javascript
-   $('.button').trigger('circleblockdrop-update-options', {
-       // ... new options
-   });
+$('.button').trigger('circleblockdrop-update-options', {
+    // ... new options
+});
 ```
 ##### - (Триггер) Отключение плагина (Разрушать не получиться, только отключаем)
 ```javascript
-   $('.button').trigger('circleblockdrop-turnoff', true); // Отключить
-   // Или 
-   $('.button').trigger('circleblockdrop-turnoff', false); // Включить
+$('.button').trigger('circleblockdrop-turnoff', true); // Отключить
+// Или 
+$('.button').trigger('circleblockdrop-turnoff', false); // Включить
 ```
 
