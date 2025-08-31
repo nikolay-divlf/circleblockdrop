@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cef1a6-1c87-4fb5-8daf-48c8448a4166" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,29 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="176">
-                <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circleblockdrop.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/plugin/circleblockdrop.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="101" column="21" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -139,17 +117,6 @@
               <item name="circleblockdrop" type="b2602c69:ProjectViewProjectNode" />
               <item name="circleblockdrop" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="circleblockdrop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="circleblockdrop" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="circleblockdrop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="circleblockdrop" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -210,29 +177,29 @@
       <updated>1756462803858</updated>
       <workItem from="1756462805006" duration="54472000" />
       <workItem from="1756576162065" duration="323000" />
-      <workItem from="1756576883532" duration="9869000" />
+      <workItem from="1756576883532" duration="10367000" />
+      <workItem from="1756588948392" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64664000" />
+    <option name="totallyTimeSpent" value="65292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17583893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1785235" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.14672364" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -311,39 +278,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="889" selection-start-line="1" selection-start-column="889" selection-end-line="1" selection-end-column="889" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/README.md" />
     <entry file="file://$PROJECT_DIR$/public/circleblockdrop.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/releases/1.0/info_post_ru.html" />
     <entry file="file://$PROJECT_DIR$/releases/1.0/info_post_en.html" />
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_2.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_5.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_6.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_7.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_8.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_2.gif" />
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_5.gif" />
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_6.gif" />
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_7.gif" />
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_8.gif" />
     <entry file="file://$PROJECT_DIR$/dev/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -364,12 +312,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_1.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_4.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_1.gif" />
+    <entry file="file://$PROJECT_DIR$/releases/1.0/site/circleblockdrop_4.gif" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -402,8 +346,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="176">
-            <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+          <first_editor relative-caret-position="81">
+            <caret line="119" column="12" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
