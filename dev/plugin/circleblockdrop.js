@@ -1,3 +1,9 @@
+/**!
+ * circleblockdrop v2.0 | divleaf.ru | https://github.com/nikolay-divlf/circleblockdrop
+ * @author Goryachev Nikolay
+ * @copyright NG 29-08-2025
+ * @license MIT
+ */
 (function ($) {
     var name_plugin = 'circleblockdrop';
     var base = {
