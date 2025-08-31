@@ -176,10 +176,16 @@ $(this).circleblockdrop({
 - data - передаются данные кнопки (это могут быть опции которые вы передаете при вызове или данные которые отрабатываются в процессе срабатывания события)
 
 ##### - (Событие) Инициализация кнопки
-```javascri$('.button').on('circleblockdrop-init', function (event, data)    console.log(data});
+```javascript
+$('.button').on('circleblockdrop-init', function (event, data) {
+    console.log(data);
+})
 ```
 ##### - (Событие) Добавление логики на элемент который еще не создан в кнопке
-```javascri$('.button').on('circleblockdrop-add', function (event, data)    console.log(data});
+```javascript
+$('.button').on('circleblockdrop-add', function (event, data) {
+    console.log(data);
+})
 ```
 ##### - (Событие) Создание элемента в кнопке
 ```javascript
